@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Planner</string>
+    <string name="icon_planned_event">&#xf133;</string>
+    <string name="icon_deadline_event">&#xf251;</string>
+    <string name="icon_add_details">&#xf040;</string>
+    <string name="icon_add_event">&#xf067;</string>
+    <string name="icon_delete_event">&#xf1f8;</string>
+    <string name="icon_settings">&#xf013;</string>
+    <string name="icon_add_check">&#xf00c;</string>
+    <string name="icon_coffee_cup">&#xf0f4;</string>
+    <string name="action_today">Today</string>
+    <string name="action_day_view">Day view</string>
+    <string name="action_three_day_view">3 day view</string>
+    <string name="action_week_view">Week view</string>
+</resources>

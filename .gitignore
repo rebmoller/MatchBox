@@ -1,0 +1,15 @@
+.DS_Store
+.sass-cache
+.sass-cache/*
+.gradle
+.idea/misc.xml
+local.properties
+.idea/workspace.xml
+.idea/libraries
+build
+captures
+.externalNativeBuild
+*.iml
+planner.iml
+app/*.iml
+.idea/misc.xml

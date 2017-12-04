@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CB_background_light"
+    tools:context="se.kth.g2.planner.EditItem">
+
+
+    <Button
+    android:id="@+id/edit_estimate_btn"
+
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:background="@drawable/roundedbutton"
+    android:text="0"
+        android:textColor="@color/CB_background_light"
+        android:layout_below="@+id/edit_title_edittext"
+        android:layout_toEndOf="@+id/edit_deadline_textview"
+        android:layout_marginStart="39dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="39dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginBottom="105dp"
+        app:layout_constraintHorizontal_bias="0.636" />
+
+  <EditText
+        android:id="@+id/edit_title_edittext"
+        android:layout_width="221dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="25dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="192dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.183" />
+
+    <TextView
+        android:id="@+id/edit_deadline_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="97dp"
+        android:text="@string/icon_deadline_event"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/edit_title_edittext"
+        android:layout_alignBottom="@+id/edit_title_edittext"
+        android:layout_alignEnd="@+id/edit_title_edittext"
+        android:layout_marginRight="97dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginBottom="137dp"
+        app:layout_constraintHorizontal_bias="0.161" />
+
+    <TextView
+        android:id="@+id/edit_planned_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_planned_event"
+        android:textSize="20sp"
+        android:layout_alignBaseline="@+id/edit_title_edittext"
+        android:layout_alignBottom="@+id/edit_title_edittext"
+        android:layout_alignEnd="@+id/edit_title_edittext"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.247"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="137dp" />
+
+    <Button
+        android:id="@+id/edit_btn_ok_object"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_estimate_btn"
+        android:layout_alignStart="@+id/edit_btn_cancel_object"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/roundedbutton2"
+        android:textColor="@color/CB_background_light"
+        android:text="Ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/edit_btn_cancel_object"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/roundedbutton2"
+        android:textColor="@color/CB_background_light"
+        android:text="Cancel"
+        android:layout_below="@+id/edit_title_edittext"
+        android:layout_toEndOf="@+id/edit_estimate_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="44dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.15" />
+
+    <TextView
+        android:id="@+id/edit_importance_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="★"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/display_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="81dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/display_planned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="81dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintVertical_bias="0.756" />
+
+</android.support.constraint.ConstraintLayout>
